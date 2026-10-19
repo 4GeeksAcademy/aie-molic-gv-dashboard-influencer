@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Influencer Performance Dashboard | Sarah's Studio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-[#F5F8FC] font-sans text-[#152238] antialiased dark:bg-[#0B1424] dark:text-[#F1F5F9]">
+  <nav class="flex gap-2 overflow-x-auto bg-[#0B1424] px-4 py-3 text-sm text-slate-100 shadow-md ring-1 ring-black/10 lg:fixed lg:inset-y-0 lg:left-0 lg:z-50 lg:w-64 lg:flex-col lg:items-stretch lg:gap-2 lg:border-r-4 lg:border-[#164E63] lg:px-5 lg:py-8 lg:shadow-2xl" aria-label="Navegación principal">
+    <p class="hidden pb-6 text-xs font-semibold uppercase tracking-normal text-cyan-300 lg:block">Ocean Analytics</p>
+    <a class="shrink-0 rounded-lg border-l-2 border-transparent px-3 py-2 hover:border-cyan-300 hover:bg-[#164E63] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" href="#kpis">KPIs</a>
+    <a class="shrink-0 rounded-lg border-l-2 border-transparent px-3 py-2 hover:border-cyan-300 hover:bg-[#164E63] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" href="#drivers">Drivers</a>
+    <a class="shrink-0 rounded-lg border-l-2 border-transparent px-3 py-2 hover:border-cyan-300 hover:bg-[#164E63] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" href="#operativo">Operativo</a>
+  </nav>
+  <header class="space-y-2 border-b border-slate-200 bg-white px-4 py-6 sm:px-6 lg:ml-64 lg:px-8 dark:border-slate-700 dark:bg-[#162339]">
+    <p class="inline-flex rounded-md bg-[#CFFAFE] px-3 py-1 text-sm font-medium text-[#155E75] dark:bg-[#164E63] dark:text-cyan-100">Sarah's Studio</p>
+    <h1 class="text-2xl font-semibold text-[#2563EB] dark:text-[#60A5FA]">Influencer Performance Dashboard</h1>
+    <ul class="flex flex-wrap gap-2 pt-2 text-xs font-medium" aria-label="Leyenda de variaciones">
+      <li class="inline-flex items-center gap-1 rounded-md bg-emerald-50 px-2 py-1 text-emerald-900 dark:bg-emerald-950 dark:text-emerald-100"><span aria-hidden="true">+</span> Positivo</li>
+      <li class="inline-flex items-center gap-1 rounded-md bg-red-50 px-2 py-1 text-red-900 dark:bg-red-950 dark:text-red-100"><span aria-hidden="true">−</span> Negativo</li>
+      <li class="inline-flex items-center gap-1 rounded-md bg-amber-100 px-2 py-1 text-amber-950 dark:bg-amber-950 dark:text-amber-100"><span aria-hidden="true">!</span> Advertencia</li>
+    </ul>
+  </header>
+  <main class="space-y-10 px-4 pb-8 sm:px-6 lg:ml-64 lg:px-8">
+    <section class="scroll-mt-6 border-b border-slate-200 pb-8 dark:border-slate-700" id="kpis" aria-labelledby="kpis-title">
+      <h2 class="mb-4 text-lg font-semibold" id="kpis-title">Indicadores principales</h2>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4" aria-label="Tarjetas KPI">
+        <article class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-[#162339]">
+          <h3 class="text-sm font-medium text-[#64748B] dark:text-[#94A3B8]">Ventas generadas</h3>
+          <p class="mt-3 text-2xl font-semibold">42.500 €</p>
+          <p class="mt-2 text-sm font-medium text-emerald-800 dark:text-emerald-200"><span aria-hidden="true">+</span> 12,5 % respecto al mes anterior</p>
+        </article>
+        <article class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-[#162339]">
+          <h3 class="text-sm font-medium text-[#64748B] dark:text-[#94A3B8]">Comisión de Sarah</h3>
+          <p class="mt-3 text-2xl font-semibold">6.375 €</p>
+          <p class="mt-2 text-sm text-[#64748B] dark:text-[#94A3B8]">15 % de 42.500 € en ventas</p>
+        </article>
+        <article class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-[#162339]">
+          <h3 class="text-sm font-medium text-[#64748B] dark:text-[#94A3B8]">Impacto de audiencia</h3>
+          <p class="mt-3 text-2xl font-semibold">4,82 %</p>
+          <p class="mt-2 text-sm font-medium text-red-900 dark:text-red-200"><span aria-hidden="true">−</span> 0,4 % de variación reportada</p>
+        </article>
+        <article class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-[#162339]">
+          <h3 class="text-sm font-medium text-[#64748B] dark:text-[#94A3B8]">Engagement medio</h3>
+          <p class="mt-3 text-2xl font-semibold">7,2 %</p>
+          <p class="mt-2 text-sm font-medium text-emerald-800 dark:text-emerald-200"><span aria-hidden="true">+</span> 2,1 %</p>
+        </article>
+      </div>
+    </section>
+    <section class="scroll-mt-6 border-b border-slate-200 pb-8 dark:border-slate-700" id="drivers" aria-labelledby="drivers-title">
+      <h2 class="mb-4 text-lg font-semibold" id="drivers-title">Drivers</h2>
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <article class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-[#162339]" aria-labelledby="platform-title">
+          <h3 class="mb-4 text-base font-semibold" id="platform-title">Rendimiento por plataforma</h3>
+          <figure aria-labelledby="platform-chart-caption">
+            <figcaption class="text-sm text-[#64748B] dark:text-[#94A3B8]" id="platform-chart-caption">Ingresos reportados y participación del total (escala 0-100 %)</figcaption>
+            <ul class="mt-4 space-y-4 text-sm">
+              <li>
+                <div class="flex items-center justify-between gap-3"><span>Instagram</span><span class="font-medium">22.100 € · 52 %</span></div>
+                <div class="mt-1 h-3 overflow-hidden rounded-full bg-slate-100 dark:bg-[#0B1424]" aria-hidden="true"><span class="block h-full w-[52%] rounded-full bg-[#2563EB] dark:bg-[#60A5FA]"></span></div>
+              </li>
+              <li>
+                <div class="flex items-center justify-between gap-3"><span>TikTok</span><span class="font-medium">14.450 € · 34 %</span></div>
+                <div class="mt-1 h-3 overflow-hidden rounded-full bg-slate-100 dark:bg-[#0B1424]" aria-hidden="true"><span class="block h-full w-[34%] rounded-full bg-[#2563EB] dark:bg-[#60A5FA]"></span></div>
+              </li>
+              <li>
+                <div class="flex items-center justify-between gap-3"><span>YouTube</span><span class="font-medium">5.950 € · 14 %</span></div>
+                <div class="mt-1 h-3 overflow-hidden rounded-full bg-slate-100 dark:bg-[#0B1424]" aria-hidden="true"><span class="block h-full w-[14%] rounded-full bg-[#2563EB] dark:bg-[#60A5FA]"></span></div>
+              </li>
+              <li class="flex items-center justify-between gap-3 border-t border-slate-200 pt-3 font-semibold dark:border-slate-700"><span>Total reportado</span><span>42.500 € · 100 %</span></li>
+            </ul>
+          </figure>
+        </article>
+        <article class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-[#162339]" aria-labelledby="products-title">
+          <h3 class="mb-4 text-base font-semibold" id="products-title">Productos promocionados</h3>
+          <figure class="mb-4 border-b border-slate-200 pb-4 dark:border-slate-700" aria-labelledby="product-chart-caption">
+            <figcaption class="text-sm text-[#64748B] dark:text-[#94A3B8]" id="product-chart-caption">Ingresos reportados por producto · escala hasta 20.000 €</figcaption>
+            <ul class="mt-4 space-y-3 text-sm">
+              <li>
+                <div class="flex items-center justify-between gap-3"><span>Producto A</span><span class="font-medium">15.200 €</span></div>
+                <div class="mt-1 h-3 overflow-hidden rounded-full bg-slate-100 dark:bg-[#0B1424]" aria-hidden="true"><span class="block h-full w-[76%] rounded-full bg-teal-700 dark:bg-teal-300"></span></div>
+              </li>
+              <li>
+                <div class="flex items-center justify-between gap-3"><span>Producto B</span><span class="font-medium">18.500 €</span></div>
+                <div class="mt-1 h-3 overflow-hidden rounded-full bg-slate-100 dark:bg-[#0B1424]" aria-hidden="true"><span class="block h-full w-[92.5%] rounded-full bg-teal-700 dark:bg-teal-300"></span></div>
+              </li>
+              <li>
+                <div class="flex items-center justify-between gap-3"><span>Producto C</span><span class="font-medium">8.800 €</span></div>
+                <div class="mt-1 h-3 overflow-hidden rounded-full bg-slate-100 dark:bg-[#0B1424]" aria-hidden="true"><span class="block h-full w-[44%] rounded-full bg-teal-700 dark:bg-teal-300"></span></div>
+              </li>
+            </ul>
+          </figure>
+          <ul class="divide-y divide-slate-200 dark:divide-slate-700">
+            <li class="py-3 first:pt-0">
+              <div class="flex items-baseline justify-between gap-2"><h4 class="font-semibold">Producto A</h4><span class="text-sm text-[#64748B] dark:text-[#94A3B8]">Skincare</span></div>
+              <dl class="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Precio</dt><dd>50 €</dd></div>
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Ingresos reportados</dt><dd>15.200 €</dd></div>
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Conversión reportada</dt><dd>5,2 %</dd></div>
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Comisión calculada (15 %)</dt><dd>2.280 €</dd></div>
+              </dl>
+            </li>
+            <li class="py-3">
+              <div class="flex items-baseline justify-between gap-2"><h4 class="font-semibold">Producto B</h4><span class="text-sm text-[#64748B] dark:text-[#94A3B8]">Apparel</span></div>
+              <dl class="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Precio</dt><dd>120 €</dd></div>
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Ingresos reportados</dt><dd>18.500 €</dd></div>
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Conversión reportada</dt><dd>4,1 %</dd></div>
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Comisión calculada (15 %)</dt><dd>2.775 €</dd></div>
+              </dl>
+            </li>
+            <li class="py-3 last:pb-0">
+              <div class="flex items-baseline justify-between gap-2"><h4 class="font-semibold">Producto C</h4><span class="text-sm text-[#64748B] dark:text-[#94A3B8]">Accessory</span></div>
+              <dl class="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Precio</dt><dd>80 €</dd></div>
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Ingresos reportados</dt><dd>8.800 €</dd></div>
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Conversión reportada</dt><dd>3,8 %</dd></div>
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Comisión calculada (15 %)</dt><dd>1.320 €</dd></div>
+              </dl>
+            </li>
+          </ul>
+        </article>
+        <article class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-[#162339]" aria-labelledby="activity-title">
+          <h3 class="mb-4 text-base font-semibold" id="activity-title">Actividad por plataforma</h3>
+          <ul class="space-y-4 text-sm">
+            <li class="border-b border-slate-200 pb-4 dark:border-slate-700">
+              <h4 class="font-semibold">Instagram <span class="font-medium text-emerald-800 dark:text-emerald-200">+18 %</span></h4>
+              <dl class="mt-2 grid grid-cols-2 gap-2">
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Clics</dt><dd>45.200</dd></div>
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Compartidos</dt><dd>1.200</dd></div>
+              </dl>
+            </li>
+            <li class="border-b border-slate-200 pb-4 dark:border-slate-700">
+              <h4 class="font-semibold">TikTok <span class="font-medium text-emerald-800 dark:text-emerald-200">+32 %</span></h4>
+              <dl class="mt-2 grid grid-cols-2 gap-2">
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Visualizaciones</dt><dd>890.000</dd></div>
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Finalización</dt><dd>42 %</dd></div>
+              </dl>
+            </li>
+            <li>
+              <h4 class="font-semibold">YouTube <span class="font-medium text-red-900 dark:text-red-200">−2 %</span></h4>
+              <dl class="mt-2 grid grid-cols-2 gap-2">
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">Tiempo medio</dt><dd>4 min 12 s</dd></div>
+                <div><dt class="text-[#64748B] dark:text-[#94A3B8]">CTR</dt><dd>2,8 %</dd></div>
+              </dl>
+            </li>
+          </ul>
+        </article>
+      </div>
+      <aside class="mt-4 rounded-lg bg-[#CFFAFE] p-4 text-sm text-[#155E75] dark:bg-[#164E63] dark:text-cyan-100" aria-label="Notas sobre las métricas">
+        Ingresos, porcentajes, actividad y conversiones se muestran como datos reportados. Las comisiones se calculan al 15 % sobre los ingresos. No hay datos suficientes para derivar alcance, conversiones totales, engagement por plataforma o producto ni ROI por plataforma.
+      </aside>
+    </section>
+    <section class="scroll-mt-6 pb-8" id="operativo" aria-labelledby="operativo-title">
+      <h2 class="mb-4 text-lg font-semibold" id="operativo-title">Detalles operacionales</h2>
+      <article class="rounded-lg border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-700 dark:bg-[#162339]" aria-labelledby="campaigns-title">
+        <h3 class="mb-4 text-base font-semibold" id="campaigns-title">Colaboraciones recientes</h3>
+        <table class="block w-full text-left text-sm sm:table" aria-labelledby="campaigns-title">
+          <caption class="sr-only">Resultados reportados de las colaboraciones recientes con marcas</caption>
+          <thead class="sr-only sm:not-sr-only sm:table-header-group sm:bg-[#CFFAFE] sm:text-[#155E75] dark:sm:bg-[#164E63] dark:sm:text-cyan-100">
+            <tr>
+              <th class="px-3 py-2" scope="col">Marca</th>
+              <th class="px-3 py-2" scope="col">Campaña</th>
+              <th class="px-3 py-2" scope="col">Estado</th>
+              <th class="px-3 py-2" scope="col">Seguidores</th>
+              <th class="px-3 py-2" scope="col">Ingresos</th>
+              <th class="px-3 py-2" scope="col">Pago a Sarah</th>
+              <th class="px-3 py-2" scope="col">ROI reportado</th>
+            </tr>
+          </thead>
+          <tbody class="block sm:table-row-group sm:divide-y sm:divide-slate-200 dark:sm:divide-slate-700">
+            <tr class="block border-b border-slate-200 py-3 last:border-b-0 dark:border-slate-700 sm:table-row sm:border-0 sm:py-0">
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Marca</span><span>Luxe Skincare</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Campaña</span><span>Summer Campaign</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Estado</span><span class="rounded-md bg-emerald-50 px-2 py-1 text-emerald-900 dark:bg-emerald-950 dark:text-emerald-100">Activa</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Seguidores</span><span>245.000</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Ingresos</span><span>12.400 €</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Pago a Sarah</span><span>1.860 €</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">ROI reportado</span><span>6,2x</span></td>
+            </tr>
+            <tr class="block border-b border-slate-200 py-3 last:border-b-0 dark:border-slate-700 sm:table-row sm:border-0 sm:py-0">
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Marca</span><span>Urban Apparel</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Campaña</span><span>Fall Collection</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Estado</span><span class="rounded-md bg-emerald-50 px-2 py-1 text-emerald-900 dark:bg-emerald-950 dark:text-emerald-100">Activa</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Seguidores</span><span>82.000</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Ingresos</span><span>4.200 €</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Pago a Sarah</span><span>630 €</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">ROI reportado</span><span>4,8x</span></td>
+            </tr>
+            <tr class="block border-b border-slate-200 py-3 last:border-b-0 dark:border-slate-700 sm:table-row sm:border-0 sm:py-0">
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Marca</span><span>Tech Gadgets</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Campaña</span><span>Review Video</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Estado</span><span class="rounded-md bg-amber-100 px-2 py-1 text-amber-950 dark:bg-amber-950 dark:text-amber-100">Pausada</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Seguidores</span><span>1.200.000</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Ingresos</span><span>21.900 €</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">Pago a Sarah</span><span>3.285 €</span></td>
+              <td class="flex justify-between gap-4 px-0 py-1 sm:table-cell sm:px-3 sm:py-3"><span class="font-medium text-[#64748B] dark:text-[#94A3B8] sm:hidden">ROI reportado</span><span>5,4x</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="mt-4 border-l-4 border-amber-600 pl-3 text-sm text-amber-950 dark:border-amber-300 dark:text-amber-100">
+          Las colaboraciones recientes suman 38.500 € en ingresos y 5.775 € en pagos reportados. Son datos parciales y no reconcilian el consolidado de 42.500 € en ventas y 6.375 € en comisión.
+        </p>
+        <p class="mt-3 text-sm text-[#64748B] dark:text-[#94A3B8]">Los ROI se muestran como valores reportados; no se recalculan ni se verifican.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
